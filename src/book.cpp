@@ -37,7 +37,8 @@ Book::Book(const string &name, Type type, int pages, float ounces) {
 
 string Book::formatReportLine() {
 	stringstream buffer("");
-	buffer << getName() << "|Type: " << getTypeName() << "|Pages: " << getPages() << "Weight: " << getWeightLbs() << "lbs";
+	buffer << getName() << "|Type: " << getTypeName() << "|Pages: " \
+			<< getPages() << "|Weight: " << getWeightLbs() << "lbs";
 	return buffer.str();
 }
 
